@@ -1,0 +1,113 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f2f5f9;
+  color: #18202c;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  box-sizing: border-box;
+}
+
+section {
+  flex: 1;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(24, 32, 44, 0.08);
+  padding: 48px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input[type="url"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(24, 32, 44, 0.16);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+input[type="url"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #4338ca);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(67, 56, 202, 0.35);
+}
+
+.output-card {
+  border: 1px dashed rgba(24, 32, 44, 0.12);
+  border-radius: 12px;
+  padding: 24px;
+  background: rgba(37, 99, 235, 0.05);
+}
+
+small {
+  color: rgba(24, 32, 44, 0.65);
+}
+
+code {
+  font-family: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  background: rgba(24, 32, 44, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
